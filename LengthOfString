@@ -1,0 +1,11 @@
+public class length(){
+public static void main(String[] args) {          //toCharArray()=========>>> convert to string into sequence of characters 
+   int count =0;
+  String s = "prepinsta";
+for(char c: s.toCharArray()){
+count++;
+		System.out.println("Length of String is : "+ count);
+
+}
+}
+  }
