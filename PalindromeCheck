@@ -1,0 +1,27 @@
+static boolean isPalindrome(String str){
+
+int i =0;
+int j=str.length();
+
+while(i<j){
+if(str.charAt(i)!=str.charAt(j))
+return false;
+i++;
+j--;
+}
+ return true;
+}
+ public static void main(String[] args)
+    {
+        // Input string
+        String str = "geeks";
+ 
+        // Convert the string to lowercase
+        str = str.toLowerCase();
+        // passing bool function till holding true
+        if (isPalindrome(str))
+ 
+            // It is a palindrome
+            System.out.print("Yes");
+        else
+       System.out.print("No");
