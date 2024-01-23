@@ -1,0 +1,9 @@
+public static void main(String[] args){
+  String Str = "geeks"
+  String ans="";
+  char ch;
+  for(int i=0;i<str.length();i++){}
+  ch=str.charAt(i);       // extracts each charecter
+  ans = ch+ans;       // add each character in front of existing string......
+}
+System.out.println("reversed"+ ans);
