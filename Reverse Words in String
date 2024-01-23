@@ -1,0 +1,20 @@
+public static String reverseWords(String s){
+  StringBuilder ans = new StringBuilder();
+
+  String temp="";
+  for(int i=0;i<s.length();i++){
+    Char ch = s.charAt(i);
+    if(ch==' '){
+      if(!temp.equals(""))
+      {
+        ans.insert(0, temp+" ");   //adding in front every time
+      }
+      temp=" ";
+    }
+    else
+    {
+      temp=temp+ch;
+    }
+    return ans.toString().subString(0,ans.length-1);    // just removing extra space at end of the ans
+  }
+}
